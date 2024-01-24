@@ -111,7 +111,7 @@
 
                       echo "
                         <tr>
-                          <td>".$row['appelido'].", ".$row['nombre']."</td>
+                          <td>".$row['nombre'].", ".$row['apellido']."</td>
                           <td>".$row['empleado_id']."</td>
                           <td>".number_format($gross, 2)."</td>
                           <td>".number_format($deduction, 2)."</td>
@@ -177,10 +177,10 @@ function getRow(id){
     dataType: 'json',
     success: function(response){
       $('#posid').val(response.id);
-      $('#edit_title').val(response.description);
-      $('#edit_rate').val(response.rate);
+      $('#edit_title').val(response.descripcion);
+      $('#edit_rate').val(response.tasa);
       $('#del_posid').val(response.id);
-      $('#del_position').html(response.description);
+      $('#del_position').html(response.descripcion);
     }
   });
 }

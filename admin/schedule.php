@@ -111,10 +111,10 @@ function getRow(id){
     dataType: 'json',
     success: function(response){
       $('#timeid').val(response.id);
-      $('#edit_time_in').val(response.time_in);
-      $('#edit_time_out').val(response.time_out);
+      $('#edit_time_in').val(response.tiempo_entrada);
+      $('#edit_time_out').val(response.tiempo_salida);
       $('#del_timeid').val(response.id);
-      $('#del_schedule').html(response.time_in+' - '+response.time_out);
+      $('#del_schedule').html(response.tiempo_entrada+' - '+response.tiempo_salida);
     }
   });
 }

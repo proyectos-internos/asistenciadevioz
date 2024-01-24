@@ -7,7 +7,7 @@
 		$hours = $_POST['hours'] + ($_POST['mins']/60);
 		$rate = $_POST['rate'];
 
-		$sql = "UPDATE horas_extras SET hours = '$hours', tasa = '$rate', fecha_hora_extra = '$date' WHERE id = '$id'";
+		$sql = "UPDATE horas_extras SET horas = '$hours', tasa = '$rate', fecha_hora_extra = '$date' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Overtime updated successfully';
 		}

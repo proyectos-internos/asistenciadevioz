@@ -15,7 +15,7 @@
 
                     <div class="col-sm-9">
                       <select class="form-control" id="edit_schedule" name="schedule">
-                        <option selected id="schedule_val"></option>
+                        <!--<option selected id="schedule_val"></option> -->
                         <?php
                           $sql = "SELECT * FROM horario";
                           $query = $conn->query($sql);
@@ -27,6 +27,11 @@
                         ?>
                       </select>
                     </div>
+                    <script>
+                  const genderValue = document.getElementById("#schedule_val")
+                  const selectGender = document.getElementById("#edit_schedule")
+                  selectGender.value = genderValue
+                </script>
                 </div>
           	</div>
           	<div class="modal-footer">

@@ -4,8 +4,8 @@ session_start();
 if (isset($_SESSION['admin'])) {
 
     // Supongamos que las variables de sesión ya están definidas.
-    $username = $_SESSION['username'];
-    $password = $_SESSION['password'];
+    $username = $_SESSION['usuario'];
+    $password = $_SESSION['clave'];
     $roles = $_SESSION['roles'];
 
     if ($roles == 1) {

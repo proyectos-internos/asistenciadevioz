@@ -11,7 +11,7 @@
 		while($row = $query->fetch_assoc()){
 			$contents .= "
 			<tr>
-				<td>".$row['apellido'].", ".$row['nombre']."</td>
+				<td>".$row['nombre'].", ".$row['apellido--{-.-']."</td>
 				<td>".$row['empleado_id']."</td>
 				<td>".date('h:i A', strtotime($row['tiempo_entrada'])).' - '. date('h:i A', strtotime($row['tiempo_salida']))."</td>
 			</tr>

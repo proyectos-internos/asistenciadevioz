@@ -104,9 +104,9 @@ function getRow(id){
     data: {id:id},
     dataType: 'json',
     success: function(response){
-      $('.employee_name').html(response.firstname+' '+response.lastname);
-      $('#schedule_val').val(response.schedule_id);
-      $('#schedule_val').html(response.time_in+' '+response.time_out);
+      $('.employee_name').html(response.firstname+' '+response.nombre);
+      $('#schedule_val').val(response.horario_id);
+      $('#schedule_val').html(response.tiempo_salida+' '+response.tiempo_entrada);
       $('#empid').val(response.empid);
     }
   });

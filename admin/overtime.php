@@ -118,19 +118,19 @@ function getRow(id){
     data: {id:id},
     dataType: 'json',
     success: function(response){
-      var time = response.hours;
+      var time = response.horas;
       var split = time.split('.');
       var hour = split[0];
       var min = '.'+split[1];
       min = min * 60;
       console.log(min);
-      $('.employee_name').html(response.firstname+' '+response.lastname);
+      $('.employee_name').html(response.nombre+' '+response.apellido);
       $('.otid').val(response.otid);
-      $('#datepicker_edit').val(response.date_overtime);
-      $('#overtime_date').html(response.date_overtime);
+      $('#datepicker_edit').val(response.fecha_hora_extra);
+      $('#overtime_date').html(response.fecha_hora_extra);
       $('#hours_edit').val(hour);
       $('#mins_edit').val(min);
-      $('#rate_edit').val(response.rate);
+      $('#rate_edit').val(response.tasa);
     }
   });
 }

@@ -110,10 +110,10 @@ function getRow(id){
     dataType: 'json',
     success: function(response){
       $('#posid').val(response.id);
-      $('#edit_title').val(response.description);
-      $('#edit_rate').val(response.rate);
+      $('#edit_title').val(response.descripcion);
+      $('#edit_rate').val(response.tasa);
       $('#del_posid').val(response.id);
-      $('#del_position').html(response.description);
+      $('#del_position').html(response.descripcion);
     }
   });
 }
